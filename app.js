@@ -5,4 +5,7 @@ const app = express();
 // application root router
 app.get('/', (req, res) => res.send('Hi, I am Zawad'));
 
-app.listen(3000);
+// application /hello router
+app.get('/hello', (req, res) => res.send('<h1> Hello Express.js</h1>'));
+
+app.listen(3000, () => console.log("App is up and running"));
